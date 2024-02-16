@@ -19,7 +19,7 @@ export default function BlogPostShow() {
   const record = data?.data;
 
   const { data: categoryData, isLoading: categoryIsLoading } = useOne({
-    resource: "categories",
+    resource: "category",
     id: record?.category?.id || "",
     queryOptions: {
       enabled: !!record,

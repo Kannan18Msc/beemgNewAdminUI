@@ -18,7 +18,7 @@ export default function BlogPostList() {
   });
 
   const { data: categoryData, isLoading: categoryIsLoading } = useMany({
-    resource: "categories",
+    resource: "category",
     ids:
       tableProps?.dataSource
         ?.map((item) => item?.category?.id)

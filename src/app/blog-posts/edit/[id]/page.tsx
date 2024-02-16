@@ -9,7 +9,7 @@ export default function BlogPostEdit() {
   const blogPostsData = queryResult?.data?.data;
 
   const { selectProps: categorySelectProps } = useSelect({
-    resource: "categories",
+    resource: "category",
     defaultValue: blogPostsData?.category?.id,
   });
 

@@ -104,7 +104,7 @@ const App = (props: React.PropsWithChildren<AppProps>) => {
 
   return (
     <>
-      <GitHubBanner />
+      {/* <GitHubBanner /> */}
       <RefineKbarProvider>
         <AntdRegistry>
           <ColorModeContextProvider defaultMode={defaultMode}>
@@ -115,7 +115,7 @@ const App = (props: React.PropsWithChildren<AppProps>) => {
               authProvider={authProvider}
               resources={[
                 {
-                  name: "blog_posts",
+                  name: "blog-posts",
                   list: "/blog-posts",
                   create: "/blog-posts/create",
                   edit: "/blog-posts/edit/:id",
@@ -125,11 +125,11 @@ const App = (props: React.PropsWithChildren<AppProps>) => {
                   },
                 },
                 {
-                  name: "categories",
-                  list: "/categories",
-                  create: "/categories/create",
-                  edit: "/categories/edit/:id",
-                  show: "/categories/show/:id",
+                  name: "category",
+                  list: "/category",
+                  create: "/category/create",
+                  edit: "/category/edit/:id",
+                  show: "/category/show/:id",
                   meta: {
                     canDelete: true,
                   },
